@@ -3,12 +3,12 @@ package paquete;
 public abstract class Figura {
     private String color;
 
-    public Figura(String color) {
-        this.color = color;
-    }
-    
     public Figura(){
         
+    }
+    
+    public Figura(String color) {
+        this.color = color;
     }
     
     public abstract void dibujar();

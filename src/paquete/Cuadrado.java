@@ -3,6 +3,18 @@ package paquete;
 public class Cuadrado extends Figura{
     private int lado;
 
+    public Cuadrado() {
+    }
+
+    public Cuadrado(int lado) {
+        this.lado = lado;
+    }
+    
+    public Cuadrado(int lado, String color) {
+        super(color);
+        this.lado = lado;
+    }
+    
     @Override
     public void dibujar(){
         for(int i=1; i<= lado; i++){
@@ -12,21 +24,7 @@ public class Cuadrado extends Figura{
             System.out.println();
         }
     }
-    
-    public Cuadrado() {
-    }
 
-    public Cuadrado(int lado) {
-        this.lado = lado;
-    }
-
-    public Cuadrado(int lado, String color) {
-        super(color);
-        this.lado = lado;
-    }
-
-    
-    
     public int getLado() {
         return lado;
     }
@@ -34,7 +32,5 @@ public class Cuadrado extends Figura{
     public void setLado(int lado) {
         this.lado = lado;
     }
-    
-    
     
 }
