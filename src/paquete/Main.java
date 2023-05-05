@@ -4,27 +4,27 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Cuadrado c = new Cuadrado(5, "Rojo");
+        Cuadrado c = new Cuadrado(5);
+        c.area(c.getLado());
+        c.perimetro(c.getLado());
         c.dibujar();
         System.out.println();
+        
         Rectangulo r = new Rectangulo(3, 6);
+        r.perimetro(r.getBase(),r.getAltura());
+        r.area(r.getBase(),r.getAltura());
         r.dibujar();
         System.out.println();
-        TrianguloRectangulo t = new TrianguloRectangulo(4, 5);
-        t.dibujar();
         
-//        Figura[] figuras = new Figura[3];
-//        figuras[0] = c;
-//        figuras[1] = r;
-//        figuras[2] = t;
-//        
-//        for(int i=0; i<figuras.length; i++){
-//            Figura f = figuras[i];
-//            f.dibujar();
-//            System.out.println();
-//        }
-
-
+        TrianguloRectangulo t = new TrianguloRectangulo(4, 5);
+        t.calculoHipo(t.getBase(),t.getAltura());
+        t.area(t.getBase(),t.getAltura());
+        t.dibujar();
+        System.out.println();
+        
+     
+        
+      
         
         
     }
