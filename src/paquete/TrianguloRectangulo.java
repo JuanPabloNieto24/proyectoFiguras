@@ -4,11 +4,20 @@ public class TrianguloRectangulo extends Figura{
     private int base;
     private int altura;
 
+    public TrianguloRectangulo() {
+    }
+
     public TrianguloRectangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
-    
+
+    public TrianguloRectangulo(int base, int altura, String color) {
+        super(color);
+        this.base = base;
+        this.altura = altura;
+    }
+
     @Override
     public void dibujar(){
         for(int i=0; i<=base; i++){
